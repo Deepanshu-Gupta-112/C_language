@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int arr[]={1,2,4,5,6,7,9};
+        int sum=0;
+	int avg=0;
+	for(int i=0;i<sizeof(arr)/sizeof(int);i++){
+		sum+=arr[i];
+	}
+	avg=sum/sizeof(arr)/sizeof(int);
+	printf("sum = %d\n",sum);
+	printf("avg = %d\n",avg);
+	return 0;}
